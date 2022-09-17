@@ -1,0 +1,23 @@
+### NUMBER GAME ###
+print('Number game from 1-1000  ')
+print('Press 0 to exit the game')
+from random import randint
+rand = randint(1,1000)
+counter = 0
+while True:
+    counter =+1
+    number=int(input('enter a number   '))
+    if (number==0):
+        print('game over')
+        break
+    elif number >1000 or number < 0:
+        print('wrong number')
+    elif number <rand:
+        print('enter a higher number')
+        continue
+    elif number > rand:
+        print('enter a lower number')
+        continue
+    elif number== rand:
+        print('congratulations')
+        break
